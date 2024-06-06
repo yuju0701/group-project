@@ -1,0 +1,96 @@
+body{
+    font-size: 100%;
+    line-height: 1;
+    word-break: break-all;
+    word-break: keep-all;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    background: #191919;
+}
+
+.title_area {
+    height: 1080px;
+    background: url(https://www.hanwhaeagles.co.kr/images/pages/game/bg_header_game.jpg) no-repeat 50% 50%;
+}
+
+
+li {
+    list-style: none;
+}
+
+.navbar-text {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-5:hover {
+    color: #191919 !important;
+}
+
+a:hover{
+    color: #f37321 !important;
+}
+
+footer{
+    position: relative;
+    height: 230px;
+    font-family: 'HanwhaGothicT', 'Dotum', '돋움', sans-serif;
+    padding: 40px 40px 40px 90px;
+    background: #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 1;
+}
+
+footer .topBtn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    height: 20px;
+    font-family: 'HanwhaR';
+    font-size: 15px;
+    line-height: 20px;
+    padding-left: 25px;
+    background: url(https://www.hanwhaeagles.co.kr/images/common/btn_top.png) no-repeat 0 50%;
+    background-size: 20px 20px;
+}
+
+.topBtn {
+    text-decoration: none;
+    color: white;
+}
+
+.topBtn:hover {
+    color: white !important;
+}
+
+footer .copyright {
+    position: absolute;
+    bottom: 40px;
+    right: 59px;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+@media screen and (max-width: 767px) {
+    footer .copyright {
+        bottom: auto;
+        top: 250px;
+        right: auto;
+        width: auto;
+        font-size: 12px;
+        text-align: left;
+        padding-bottom: 25px;
+    }
+}
