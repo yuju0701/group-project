@@ -2,9 +2,6 @@
 
 @import "./global.css";
 
-main {
+#wrap {
   position: relative;
-  top: -84px;
-  width: 100%;
-  overflow: hidden;
 }
