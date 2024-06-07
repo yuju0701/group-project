@@ -56,6 +56,18 @@
     body.menu_active{overflow-y: hidden;}
 
     /* common-header */
+    nav {
+        width: auto;
+    }
+
+    .lnb-list,
+    .lnb-right {
+        display: none;
+    }
+
+    .ham_btn {
+        display: block;
+    }
 
     /* common-footer */
 
@@ -63,6 +75,8 @@
         position:fixed;
         bottom:0px;
         padding:32px 24px 40px;
+        height: auto;
+        text-align: left;
     }
     #footer h1{display:none;}
     #footer .topBtn{top:-30px;right:20px;}
@@ -77,8 +91,6 @@
     #footer .f_menu ul li a{font-size:12px;}
     #footer .f_menu ul li a:focus,
     #footer .f_menu ul li a:hover{color:#fff;}
-    #footer .copy_R{bottom:auto;top:250px;right:auto;width:auto;font-size:12px;text-align:left;}
-    #footer .copy_R span{font-size:10px;}
 
     [data-locale="en"] #footer .copy_R{top: auto;}
 
@@ -94,6 +106,9 @@
     #footer .sns_wrap {
         display: none;
     }
+
+    #footer .copy_R{bottom:auto;top:250px;right:auto;width:auto;font-size:12px;text-align:left;}
+    #footer .copy_R span{font-size:10px;}
 
     /* main */
     #container.main{padding-bottom:100px;}

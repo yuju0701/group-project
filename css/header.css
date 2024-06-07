@@ -150,3 +150,24 @@ header a {
     color: var(--default-color);;
     transition: 0.3s ease-in-out;
 }
+
+.ham_btn {
+    width: 25px;
+    padding: 30px 0;
+    margin-left: 15px;
+    display: none;
+}
+
+.ham_btn>span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #555;
+    margin-bottom: 8px;
+}
+
+.ham_btn>span:last-child {
+    width: 13px;
+    margin-bottom: 0px;
+    float: right;
+}

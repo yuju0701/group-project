@@ -5,3 +5,9 @@
 #wrap {
   position: relative;
 }
+
+/* 테스트 스타일 */
+.mainContainer {
+  height: 150vh;
+  background-color: aqua;
+}
