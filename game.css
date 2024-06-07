@@ -11,16 +11,25 @@ body{
 .title_area {
     height: 1080px;
     background: url(https://www.hanwhaeagles.co.kr/images/pages/game/bg_header_game.jpg) no-repeat 50% 50%;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
 }
 
+#header {
+    background-color:transparent !important;
+    color: white !important;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 
+#header:hover {
+    background-color: #191919;
+    opacity: 0.8;
+
+}
 
 .navbar {
-    background-color: rgba(0, 0, 0,1) !important;
-    color: white !important;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    background-color: transparent !important;
+    margin-left: 40px;
 }
 
 .navbar:hover {
@@ -40,12 +49,16 @@ span li a {
     color: white !important;
 }
 
+.dropdown-menu {
+    background-color: transparent !important;
+}
+
 span li span {
     color: white !important;
 }
 
 .dropdown-item {
-    color: black !important;
+    color: white !important;
 }
 
 nav ul li a:hover {
@@ -60,6 +73,12 @@ li {
     display: flex;
     justify-content: space-between;
     width: 250px;
+}
+
+#navbarSupportedContent {
+    display: flex !important;
+    justify-content: space-around !important;
+
 }
 
 .flex {
@@ -81,6 +100,10 @@ a:hover{
 
 a span:hover {
     color: white ;
+}
+
+.dropdown-toggle::after {
+    content: none;
 }
 
 footer{
