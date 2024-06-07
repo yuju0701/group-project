@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@import "./global.css";
+
+main {
+  position: relative;
+  top: -84px;
+  width: 100%;
+  overflow: hidden;
+}
