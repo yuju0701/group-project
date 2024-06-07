@@ -9,11 +9,12 @@
   }
 #wrap {
     width: 1920px;
+    min-width: 360px;
     margin: 0 auto;
     overflow: hidden;
 }
 main {
-    height: 4300px;
+    height: 3700px;
     background-color: #000000;
 }
 .video-sec {
