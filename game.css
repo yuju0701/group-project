@@ -1,4 +1,29 @@
-body{
+@charset "utf-8";
+
+@import "./game_global.css";
+
+#wrap {
+  position: relative;
+}
+
+/* 테스트 스타일 */
+.mainContainer {
+  height: 150vh;
+  background-color: aqua;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.title_area {
+  height: 1080px;
+  background: url(https://www.hanwhaeagles.co.kr/images/pages/game/bg_header_game.jpg) no-repeat 50% 50%;
+  background-attachment: fixed;
+}
+
+body {
     font-size: 100%;
     line-height: 1;
     word-break: break-all;
@@ -8,164 +33,9 @@ body{
     background: #191919;
 }
 
-.title_area {
-    height: 1080px;
-    background: url(https://www.hanwhaeagles.co.kr/images/pages/game/bg_header_game.jpg) no-repeat 50% 50%;
-    background-attachment: fixed;
-}
-
-#header {
-    background-color:transparent !important;
-    color: white !important;
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
-#header:hover {
-    background-color: #191919;
-    opacity: 0.8;
-
-}
-
-.navbar {
-    background-color: transparent !important;
-    margin-left: 40px;
-}
-
-.navbar:hover {
-    color: rgba(0, 0, 0, 1) !important;
-}
-
-nav ul li a {
-    padding: 18px;
-    text-transform:uppercase;
-    color: white !important;
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    }
-
-span li a {
-    color: white !important;
-}
-
-.dropdown-menu {
-    background-color: transparent !important;
-}
-
-span li span {
-    color: white !important;
-}
-
-.dropdown-item {
-    color: white !important;
-}
-
-nav ul li a:hover {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.3);
-        }
-    
-li {
-    list-style: none;
-}
-
-.navbar-text {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-}
-
-#navbarSupportedContent {
-    display: flex !important;
-    justify-content: space-around !important;
-
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.ml-5 {
-    margin-right: 20px;
-}
-
-.ml-5:hover {
-    color: white;
-}
-
-a:hover{
-    color: #f37321 !important;
-}
-
-a span:hover {
-    color: white ;
-}
-
-.dropdown-toggle::after {
-    content: none;
-}
-
-footer{
-    position: relative;
-    height: 230px;
-    font-family: 'HanwhaGothicT', 'Dotum', '돋움', sans-serif;
-    padding: 40px 40px 40px 90px;
-    background: #000;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 1;
-}
-
-footer .topBtn {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 60px;
-    height: 20px;
-    font-family: 'HanwhaR';
-    font-size: 15px;
-    line-height: 20px;
-    padding-left: 25px;
-    background: url(https://www.hanwhaeagles.co.kr/images/common/btn_top.png) no-repeat 0 50%;
-    background-size: 20px 20px;
-}
-
-.topBtn {
-    text-decoration: none;
-    color: white;
-}
-
-.topBtn:hover {
-    color:rgba(0, 0, 0, 0.3);
-}
-
-footer .copyright {
-    position: absolute;
-    bottom: 40px;
-    right: 59px;
-    font-family: 'MyriadPro-Regular', sans-serif;
-    font-size: 16px;
-    color: #888;
-}
-
-*:not(hr) {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    border: 0;
-    outline-color: orange;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-}
-
-@media screen and (max-width: 767px) {
-    footer .copyright {
-        bottom: auto;
-        top: 250px;
-        right: auto;
-        width: auto;
-        font-size: 12px;
-        text-align: left;
-        padding-bottom: 25px;
-    }
+html, body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  color: #fff;
 }
