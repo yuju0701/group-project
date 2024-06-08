@@ -244,3 +244,62 @@
 .eagles_intro p .txt_hanwha {
   font-family: 'HanwhaL', sans-serif;
 }
+
+/* 그룹사소개 */
+.group_intro::after, .group_intro ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.group_intro dl {
+  float: left;
+}
+
+.group_intro dl.build {
+  width: 848px;
+}
+
+.group_intro dl.finance {
+  width: 212px;
+}
+
+.group_intro dl.service {
+  width: 180px;
+}
+
+.group_intro dt {
+  margin-right: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #808080;
+  font-family: 'HanwhaGothicT',sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.13;
+}
+
+.group_intro dl.service dt {
+  margin-right: 0;
+}
+
+.group_intro dd {
+  padding-top: 20px;
+}
+
+.group_intro li {
+  float: left;
+  width: 212px;
+  padding: 2px 0;
+}
+
+.group_intro li a {
+  display: block;
+  color: #808080;
+  font-family: 'HanwhaL',sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.group_intro li a:hover {
+  color: #f37321;
+}

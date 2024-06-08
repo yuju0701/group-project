@@ -85,6 +85,6 @@
     #container.eagles .eagles_intro .symbol_list li + li { margin: 20px 0 0; }
 
     #container.eagles .eagles_intro .btn_area  { width: 50vw; min-width:220px; margin: 30px auto 0; }
-    #container.eagles .eagles_intro .btn_area .btn_com { display: block; fo}
+    #container.eagles .eagles_intro .btn_area .btn_com { display: block; }
     #container.eagles .eagles_intro .btn_area .btn_com + .btn_com { margin: 10px 0 0 0; }
 }
