@@ -24,8 +24,11 @@
   <body>
     <div id="wrap">
       <div id="headers"></div>
-      <section class="mainContainer">
+      <section id="container" class="eagles">
         <!-- 구현할 페이지를 여기에 작성 -->
+        <div class="title_area" style="height: 782px">
+          <h3>EAGLES</h3>
+        </div>
         <article></article>
       </section>
       <div id="footers"></div>
@@ -41,6 +44,7 @@
       $(document).ready(function () {
         $("#headers").load("header.html");
         $("#footers").load("footer.html");
+        $.headerMenuFn();
       });
     </script>
 
