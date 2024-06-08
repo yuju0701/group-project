@@ -2,9 +2,12 @@
 
 @import "./global.css";
 
-main {
+#wrap {
   position: relative;
-  top: -84px;
-  width: 100%;
-  overflow: hidden;
+}
+
+/* 테스트 스타일 */
+.mainContainer {
+  height: 150vh;
+  background-color: aqua;
 }
