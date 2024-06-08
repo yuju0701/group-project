@@ -26,10 +26,39 @@
       <div id="headers"></div>
       <section id="container" class="eagles">
         <!-- 구현할 페이지를 여기에 작성 -->
-        <div class="title_area" style="height: 782px">
-          <h3>EAGLES</h3>
-        </div>
-        <article></article>
+        <div class="title_area" style="height: 782px"></div>
+        <article id="eaglesCon" class="content_block eagles_intro">
+          <div>
+            <div class="tab_menu">
+              <ul>
+                <li class="tabbtn active" id="PCMNCL">
+                  <a href="#"><span style="width: 0px"></span>구단소개</a>
+                </li>
+                <li class="tabbtn" id="PCMNGI">
+                  <a href="#"><span style="width: 0px"></span>그룹사소개</a>
+                </li>
+                <li class="tabbtn" id="PCMNHI">
+                  <a href="#"><span style="width: 0px"></span>HISTORY</a>
+                </li>
+                <li class="tabbtn" id="PCMNEP">
+                  <a href="#"
+                    ><span style="width: 0px"></span>한화생명 이글스파크</a
+                  >
+                </li>
+                <li class="tabbtn" id="PCMNCS">
+                  <a href="#"><span style="width: 0px"></span>사회공헌</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="TabcontBox">
+            <div class="tabcont">구단소개</div>
+            <div class="tabcont">그룹사소개</div>
+            <div class="tabcont">HISTORY</div>
+            <div class="tabcont">한화생명 이글스파크</div>
+            <div class="tabcont">사회공헌</div>
+          </div>
+        </article>
       </section>
       <div id="footers"></div>
     </div>
@@ -41,10 +70,25 @@
     <script src="../css/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script>
+      // 탭 버튼 함수
+      $.TabbtnFn = function () {
+        var TabGroup = $(".tab_menu .tabbtn");
+        var TabcontBox = $(".TabcontBox .tabcont");
+        TabGroup.click(function () {
+          var thisIs = $(this);
+          TabGroup.removeClass("active");
+          thisIs.addClass("active");
+          var idx = thisIs.index();
+          TabcontBox.hide().eq(idx).show();
+        });
+      };
       $(document).ready(function () {
         $("#headers").load("header.html");
         $("#footers").load("footer.html");
-        $.headerMenuFn();
+        $(".TabcontBox .tabcont").hide();
+        $(".TabcontBox .tabcont:first-child").show();
+        // 탭 버튼 함수 호출
+        $.TabbtnFn();
       });
     </script>
 

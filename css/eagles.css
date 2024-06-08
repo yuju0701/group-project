@@ -12,6 +12,7 @@
   background-color: aqua;
 }
 
+/* 메인영역 스타일 */
 #container {
   overflow-x: hidden;
   padding-bottom: 230px;
@@ -43,14 +44,13 @@
   left: -999px;
   width: 0;
   height: 0;
-  font-family: 'MyriadPro-Semibold', sans-serif;
   font-size: 0;
   line-height: 1;
   margin: 0 auto;
 }
 
 #container.eagles .title_area {
-  background: url('../image/eagles/bg_header_eagles.jpg') no-repeat 50% 50%;
+  background: url('../image/eagles/bg_header_eagles.jpg') no-repeat 50% 60%;
 }
 
 #container.eagles .eagles_title {
@@ -59,3 +59,103 @@
   line-height: 1.13;
 }
 
+#container .content_block {
+  position: relative;
+  width: 1240px;
+  padding-top: 160px;
+  margin: -230px auto 0;
+}
+
+#container .content_block .tab_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 80px;
+  overflow: auto;
+}
+
+#container .content_block .tab_menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #707070;
+}
+
+#container .content_block .tab_menu::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#container .content_block .tab_menu ul {
+  float: left;
+}
+
+#container .content_block .tab_menu li {
+  float: left;
+}
+
+#container .content_block .tab_menu li + li {
+  margin-left: 34px;
+}
+
+#container .content_block .tab_menu a {
+  display: block;
+  position: relative;
+  height: 80px;
+  padding: 0 1px;
+  border: 2px solid transparent;
+  color: rgb(255,255,255, .5);
+  font-size: 18px;
+  line-height: 80px;
+}
+
+#container .content_block .tab_menu li a span, #container .content_block .tab_menu li.active a:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: #fff;
+}
+
+#container .content_block .tab_menu li.active a:before {
+  width: 100% !important;
+}
+
+#container .content_block .tab_menu li a:hover, #container .content_block .tab_menu li.active a {
+  color: #fff;
+}
+
+#container .content_block .tab_menu li a span {
+  width: 0;
+}
+
+#container .content_block .tab_menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  z-index: 11;
+  animation: tabMove .3s linear 1 normal;
+  animation-fill-mode: forwards;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#container .content_block .tab_menu.fixed.on {
+  background: #000;
+}
+
+#container .content_block .tab_menu.fixed ul {
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+}
