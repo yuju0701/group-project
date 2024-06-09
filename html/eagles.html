@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" href="../image/game/NoonaCodings_favicon.png" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-icons/bootstrap-icons.css" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="../css/eagles.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="headers"></div>
+      <section id="container" class="eagles">
+        <!-- 구현할 페이지를 여기에 작성 -->
+        <div class="title_area" style="height: 782px">
+          <h3>EAGLES</h3>
+        </div>
+        <article id="eaglesCon" class="content_block eagles_intro">
+          <div>
+            <div class="tab_menu">
+              <ul>
+                <li class="tabbtn active" id="PCMNCL">
+                  <a href="#"><span style="width: 0px"></span>구단소개</a>
+                </li>
+                <li class="tabbtn" id="PCMNGI">
+                  <a href="#"><span style="width: 0px"></span>그룹사소개</a>
+                </li>
+                <li class="tabbtn" id="PCMNHI">
+                  <a href="#"><span style="width: 0px"></span>HISTORY</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="TabcontBox">
+            <div class="tabcont">
+              <h4 class="eagles_title">
+                <span class="txt_hanwha">한화이글스</span>를<br />소개합니다.
+              </h4>
+              <div class="eagles_content">
+                <!-- tab menu -->
+                <div>
+                  <script>
+                    $(function () {
+                      //메뉴 제어
+                      var menuCd = "MNCLCI";
+                      //console.log("My name is %s and.", menuCd);
+                      if (menuCd != "") {
+                        var menuCdLeft = menuCd + "_" + "LEFT";
+                        console.log("My name is %s and.", menuCdLeft);
+                        $("#" + menuCdLeft).addClass("active");
+                        //console.log("Active Function After");
+                      }
+                    });
+                  </script>
+                  <div class="left_tab">
+                    <a href="javascript:void(0);" class="openBtn">구단소개</a>
+                    <ul>
+                      <li class="active" id="MNCLCI_LEFT">
+                        <a href="#">구단소개</a>
+                      </li>
+                      <li class="" id="MNCLSY_LEFT">
+                        <a href="#">CI</a>
+                      </li>
+                      <li class="" id="MNCLMC_LEFT">
+                        <a href="#">MASCOT</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right_conts">
+                  <div class="eagles_logo">
+                    <img
+                      src="../image/eagles/intro_eagles_logo.png"
+                      alt="eagles logo"
+                    />
+                  </div>
+
+                  <strong class="strong">
+                    <span class="txt_hanwha">한화이글스</span>는 충청권을 연고로
+                    1985년 한국 프로 야구(KBO)의 제7구단으로 출범했습니다.
+                  </strong>
+                  <p>
+                    대전광역시 중구 부사동에 위치한 대전
+                    <span class="txt_hanwha">한화생명 EAGLESPARK</span>를 홈
+                    구장으로 이용하고 있으며, 제2구장은 충청북도 청주시 서원구
+                    사직동에 위치한 청주야구장입니다.<br /><br />
+                    보다 많은 분들이 야구를 관람하며 행복을 느낄 수 있도록
+                    <span class="txt_hanwha">한화이글스</span>는 투혼을 담은
+                    경기를 위해 최선을 다하고 있습니다. 지속적인 강팀으로 발돋움
+                    하고자 내부 육성 시스템을 정비, 중장기 계획을 바탕으로
+                    <span class="txt_hanwha">한화이글스</span>의 감독 및 코칭
+                    스태프, 선수, 프런트 모두가 함께 노력하고 있습니다.<br /><br />
+                    늘 응원해주시는 팬들의 성원과 기대에 부응할 수 있도록
+                    역동적인 경기와 다양한 마케팅을 전개해 팬과 함께 비상하는
+                    구단이 되겠습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tabcont">
+              <h4 class="eagles_title">
+                <span class="txt_hanwha">한화이글스</span>
+                그룹사를<br />소개합니다.
+              </h4>
+              <div class="group_intro">
+                <dl class="build">
+                  <dt>제조/건설</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <a
+                          href="http://www.hanwhacorp.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >㈜한화</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hanwhatechwin.co.kr/"
+                          target="_blank"
+                          title="새창"
+                          >한화비전</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhaimpact.com/kr/index"
+                          target="_blank"
+                          title="새창"
+                          >한화임팩트</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hwenc.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >한화 건설부문</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhaaerospace.co.kr/"
+                          target="_blank"
+                          title="새창"
+                          >한화에어로스페이스</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwha-pm.com/ko/"
+                          target="_blank"
+                          title="새창"
+                          >한화정밀기계</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hanwha-total.com"
+                          target="_blank"
+                          title="새창"
+                          >한화토탈에너지스</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhaocean.com/"
+                          target="_blank"
+                          title="새창"
+                          >한화오션</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhapowersystems.co.kr/"
+                          target="_blank"
+                          title="새창"
+                          >한화파워시스템</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.yncc.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >여천NCC</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hanwhasystems.com"
+                          target="_blank"
+                          title="새창"
+                          >한화시스템</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhasolutions.com/"
+                          target="_blank"
+                          title="새창"
+                          >한화솔루션</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://hec.hanwha.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >한화에너지</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hwam.co.kr/"
+                          target="_blank"
+                          title="새창"
+                          >한화첨단소재</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwha-engine.com/"
+                          target="_blank"
+                          title="새창"
+                          >한화엔진</a
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="finance">
+                  <dt>금융</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <a
+                          href="http://www.hanwhalife.com"
+                          target="_blank"
+                          title="새창"
+                          >한화생명</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhalifefs.com/"
+                          target="_blank"
+                          title="새창"
+                          >한화생명금융서비스</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hwgeneralins.com"
+                          target="_blank"
+                          title="새창"
+                          >한화손해보험</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.koreastock.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >한화투자증권</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.Hanwhafund.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >한화자산운용</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hanwhasbank.com"
+                          target="_blank"
+                          title="새창"
+                          >한화저축은행</a
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <dl class="service">
+                  <dt>서비스/레저</dt>
+                  <dd>
+                    <ul>
+                      <li>
+                        <a
+                          href="http://www.hwrc.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >한화호텔&amp;리조트</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="http://www.hanwhagalleria.co.kr"
+                          target="_blank"
+                          title="새창"
+                          >한화갤러리아</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.hanwhaconnect.co.kr/"
+                          target="_blank"
+                          title="새창"
+                          >한화커넥트</a
+                        >
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="tabcont">
+              <h4 class="eagles_title">
+                <span class="txt_hanwha">한화이글스</span>의<br />
+                추억과 영광의<br />
+                순간들을 함께하세요!
+              </h4>
+              <div class="eagles_content">
+                <!-- left tab menu -->
+                <div>
+                  <script>
+                    $(function () {
+                      //메뉴 제어
+                      var menuCd = "MNHI01";
+                      //console.log("My name is %s and.", menuCd);
+                      if (menuCd != "") {
+                        var menuCdLeft = menuCd + "_" + "LEFT";
+                        console.log("My name is %s and.", menuCdLeft);
+                        $("#" + menuCdLeft).addClass("active");
+                        //console.log("Active Function After");
+                      }
+                    });
+                  </script>
+                  <div class="left_tab">
+                    <a href="javascript:void(0);" class="openBtn">1981-1989</a>
+                    <ul class="anchor">
+                      <li class="active" id="MNHI01_LEFT">
+                        <a href="#history_81-89">1981-1989</a>
+                      </li>
+                      <li class="" id="MNHI02_LEFT">
+                        <a href="#history_90-99">1990-1999</a>
+                      </li>
+                      <li class="" id="MNHI03_LEFT">
+                        <a href="#history_00-09">2000-2009</a>
+                      </li>
+                      <li class="" id="MNHI04_LEFT">
+                        <a href="#history_10-21">2010-2021</a>
+                      </li>
+                      <li class="" id="MNHI05_LEFT">
+                        <a href="#">LEGEND</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- left tab menu -->
+
+                <div class="right_conts">
+                  <div class="his_wrap">
+                    <ol id="history_81-89">
+                      <li class="tit_area">
+                        <strong>1980</strong>
+                        <div class="his_group">
+                          <em>프로야구 출범</em>
+                          <span
+                            >KBO 이사회에서 한화그룹의 창단신청 승인이
+                            결정되었고, 대국민 공모를 통한<br />
+                            구단 이름은 ‘빙그레 이글스’로 결정되었다.</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0100.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0100m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li class="point">
+                        <strong>1985</strong>
+                        <div class="his_group point">
+                          <span
+                            >1985년 <i>한화그룹</i>이 대전을 연고지로 삼은
+                            제7구단으로 창단 준비 시작</span
+                          >
+                          <em>팀 명칭 공모 결과 “빙그레이글스”로 결정</em>
+                          <img
+                            src="../image/eagles/img_history_step01_0101.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0101m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>1986</strong>
+                        <div class="his_group">
+                          <b>03.08</b>
+                          <em
+                            >대전지역 빙그레이글스 창단식(배성서 초대감독)
+                            진행</em
+                          >
+                          <span
+                            >대전구장 12,000석의 만원 관중 앞에서 MBC청룡을
+                            상대로 치른 역사적인 첫 경기 시작</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0102.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0102m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>1987</strong>
+                        <div class="his_group">
+                          <b>10.08</b>
+                          <em>제2대 김영덕 감독 선임</em>
+                          <img
+                            src="../image/eagles/img_history_step01_0103.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0103m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                    </ol>
+                    <ol id="history_90-99">
+                      <li class="tit_area">
+                        <strong>1990</strong>
+                        <div class="his_group">
+                          <em>돌풍의 신생팀</em>
+                          <span
+                            >20세기 최후의 승자! 한국시리즈 우승<br />
+                            돌풍의 신생팀에서 20세기 최후의 승자가
+                            되기까지</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0200.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0200m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>1991</strong>
+                        <div class="his_group">
+                          <b>12.11</b>
+                          <em
+                            >장종훈 타격 4관왕(홈런, 타점, 장타율, 최다안타)</em
+                          >
+                          <span
+                            >송진우는 1990년 구원왕에 이어 1992년 19승과
+                            17세이브로 다승과<br />
+                            구원왕 타이틀 동시 석권</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0201.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0201m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li class="point">
+                        <strong>1993</strong>
+                        <div class="his_group point">
+                          <b>11.01</b>
+                          <em>구단 명칭 한화이글스로 변경</em>
+                          <img
+                            src="../image/eagles/img_history_step01_0202.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0202m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>1997</strong>
+                        <div class="his_group">
+                          <b>05.23</b>
+                          <em>정민철 프로통산 9번째 노히트노런 기록 수립</em>
+                          <img
+                            src="../image/eagles/img_history_step01_0203.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0203m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li class="point">
+                        <strong>1999</strong>
+                        <div class="his_group point">
+                          <b>10.29</b>
+                          <em>1999년 한국시리즈 우승 (롯데전 4승 1패)</em>
+                          <span>한국시리즈 MVP 구대성 (1승 3세이브)</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0204.jpg"
+                            class="pc_only active"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0204m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                    </ol>
+                    <ol id="history_00-09">
+                      <li class="tit_area">
+                        <strong>2000</strong>
+                        <div class="his_group">
+                          <em>레전드의 세대교체</em>
+                          <span
+                            >한국 프로야구를 상징하던 레전드들과의 아름다운
+                            이별<br />
+                            그리고 혜성처럼 등장한 새로운 레전드</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0300.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0300m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2001</strong>
+                        <div class="his_group">
+                          <b>10.31</b>
+                          <span>김태균 2001년 신인왕 수상</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0301.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0301m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2002</strong>
+                        <div class="his_group">
+                          <b>11.06</b>
+                          <em
+                            >창단멤버 유승안 수석코치를 제6대 감독으로 선임</em
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2003</strong>
+                        <div class="his_group">
+                          <b>05</b>
+                          <span
+                            >장종훈(프로 통산 첫 번째 1,700안타), 송진우(프로
+                            통산 첫 번째로 22,000이닝 돌파</span
+                          >
+                          <span>좌완 최초 1,600 탈삼진) 대기록 수립</span>
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2004</strong>
+                        <div class="his_group">
+                          <b>10.04</b>
+                          <span>제7대 김독 김인식 선임</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0302.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0302m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2005</strong>
+                        <div class="his_group">
+                          <b>09.15</b>
+                          <span
+                            >장종훈 은퇴경기 (기아전), 등번호 35번 구단 최초
+                            영구결번 지정</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0303.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0303m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                        <div class="his_group">
+                          <span
+                            >2005년 정규리그를 4위로 마친 뒤 준플레이오프 승리로
+                            플레이오프 진출</span
+                          >
+                          <span>4년만의 포스트시즌 복귀</span>
+                        </div>
+                      </li>
+                      <li class="point">
+                        <strong>2006</strong>
+                        <div class="his_group">
+                          <b>08.29</b>
+                          <span
+                            >송진우 프로 통산 첫 번째 200승 2,800이닝 투구
+                            (기아전)</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0304.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0304m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                        <div class="his_group point pt13">
+                          <em>한국시리즈 준우승</em>
+                        </div>
+                        <div class="his_group">
+                          <b>11.02</b>
+                          <span>류현진 2006년 신인왕, 시즌 MVP 동시 석권</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0305.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0305m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2009</strong>
+                        <div class="his_group">
+                          <b>09.23</b>
+                          <span
+                            >송진우 은퇴경기(LG전), 등번호 21번은 영구결번으로
+                            지정</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0307.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0307m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                        <div class="his_group">
+                          <b>09.24</b>
+                          <span>제8대 감독으로 한대화 선임</span>
+                        </div>
+                      </li>
+                    </ol>
+                    <ol id="history_10-21">
+                      <li class="tit_area">
+                        <strong>2010</strong>
+                        <div class="his_group">
+                          <em>새로운 도약을 위한 바닥 다지기</em>
+                          <span class="mline"
+                            >바닥이 탄탄해야 더 높이 날아오를 수 있는 법<br />
+                            팬과 함께 새로운 이글스로 도약하기 위한 시간들</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0400.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0400m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2011</strong>
+                        <div class="his_group">
+                          <b>12.12</b>
+                          <span
+                            >김태균 입단(연봉 15억), 박찬호 입단(연봉
+                            2,400만원)</span
+                          >
+                          <img
+                            src="../image/eagles/img_history_step01_0401.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0401m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2012</strong>
+                        <div class="his_group">
+                          <b>10.08</b>
+                          <span>제9대 감독으로 김응룡 선임</span>
+                        </div>
+                        <div class="his_group">
+                          <b>11.29</b>
+                          <span>박찬호 은퇴 발표</span>
+                        </div>
+                        <div class="his_group">
+                          <b>12.10</b>
+                          <span>류현진의 메이저리그 LA 다저스 입단 확정</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0402.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0402m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                        <div class="his_group">
+                          <b>12.26</b>
+                          <span>2군 전용 훈련시설 서산연습장 준공</span>
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2014</strong>
+                        <div class="his_group">
+                          <b>10.25</b>
+                          <span>제10대 감독 김성근 영입</span>
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2015</strong>
+                        <div class="his_group pt13">
+                          <span
+                            >창단 30주년 신규유니폼 4종 출시, 홈 관중 60만
+                            돌파</span
+                          >
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2017</strong>
+                        <div class="his_group">
+                          <span>김태균 86경기 연속 출루 기록 경신,</span>
+                          <span>제11대 한용덕 감독 선임</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0403.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0403m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                      <li class="point">
+                        <strong>2018</strong>
+                        <div class="his_group point">
+                          <span>홈경기 역대 최다 관중 73만 기록</span>
+                          <em>11년 만의 포스트시즌 진출(정규리그 3위 달성)</em>
+                        </div>
+                      </li>
+                      <li>
+                        <strong>2019</strong>
+                        <div class="his_group">
+                          <span
+                            >김태균 KBO 통산 첫 번째 우타자 최다안타 2,160개
+                            달성 (對 두산, 잠실 9/28)</span
+                          >
+                          <span>제10대 정민철 단장 선임</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0404.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0404m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                        <div class="his_group pt13">
+                          <span>제12대 수베로 감독 선임</span>
+                          <img
+                            src="../image/eagles/img_history_step01_0405.jpg"
+                            class="pc_only"
+                            alt=""
+                          />
+                          <img
+                            src="../image/eagles/img_history_step01_0405m.jpg"
+                            class="mobile_only"
+                            alt=""
+                          />
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <!-- //.right_conts -->
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div id="footers"></div>
+    </div>
+
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="../css/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // 탭 버튼 함수
+      $.TabbtnFn = function () {
+        var TabGroup = $(".tab_menu .tabbtn");
+        var TabcontBox = $(".TabcontBox .tabcont");
+        TabGroup.click(function () {
+          var thisIs = $(this);
+          TabGroup.removeClass("active");
+          thisIs.addClass("active");
+          var idx = thisIs.index();
+          TabcontBox.hide().eq(idx).show();
+
+          // 히스토리 탭 클릭 시 addFixed 함수 호출
+          if (thisIs.attr("id") === "PCMNHI") {
+            addFixed();
+          } else {
+            removeFixed();
+          }
+        });
+      };
+
+      function addFixed() {
+        var _lTab = $(".left_tab");
+        var _tabMn = $(".tab_menu");
+        var _leftMn = $(".left_tab ul.anchor li");
+        var hisCont = $(".his_wrap ol");
+        var _winSz = $(window).width();
+
+        var _lTabTop = _lTab.length ? _lTab.offset().top : 0;
+        var _tabMnTop = _tabMn.length ? _tabMn.offset().top : 0;
+
+        $(window).on("scroll.fixed", function () {
+          // 이벤트 네임스페이스 사용
+          var _winTop = $(window).scrollTop();
+          if (_winSz >= 768) {
+            if (_winTop > 888) {
+              _lTab.addClass("fixed");
+            } else {
+              _lTab.removeClass("fixed");
+            }
+          }
+          hisCont.each(function (index, item) {
+            if (_winTop >= hisCont.eq(index).offset().top) {
+              _leftMn.removeClass("active");
+              _leftMn.eq(index).addClass("active");
+            }
+          });
+        });
+      }
+
+      function removeFixed() {
+        $(window).off("scroll.fixed"); // 스크롤 이벤트 언바인딩
+        $(".left_tab").removeClass("fixed");
+        $(".tab_menu").removeClass("fixed");
+      }
+
+      $(document).ready(function () {
+        var _scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        console.log(_scrollTop);
+
+        $("#headers").load("header.html");
+        $("#footers").load("footer.html");
+        $(".TabcontBox .tabcont").hide();
+        $(".TabcontBox .tabcont:first-child").show();
+        $.TabbtnFn();
+
+        $(".left_tab ul.anchor a").on("focus blur click", function (e) {
+          var _top = $($(this).attr("href")).offset().top - 160;
+          $("html, body").stop().animate({ scrollTop: _top }, 500);
+          return false;
+        });
+
+        $(".tab_menu").on("mouseenter", function () {
+          if ($(this).hasClass("fixed")) {
+            $(this).addClass("on");
+          }
+        });
+        $(".tab_menu").on("mouseleave", function () {
+          if ($(this).hasClass("fixed")) {
+            $(this).removeClass("on");
+          }
+        });
+      });
+
+      $(window).resize(function () {
+        var _winSz = $(window).width();
+      });
+    </script>
+
+    <!-- main js -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

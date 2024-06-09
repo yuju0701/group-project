@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import "../css/global.css";
+
+
+.all {
+    background-color: black;
+}
+
+#wrap {
+    position: relative;
+}
+    
+#container {
+    background-color: black;
+    overflow-x: hidden;
+    padding-bottom: 230px;
+}
+
+#container .content_block {
+    position: relative;
+    width: 1240px;
+    padding-top: 250px;
+    margin: -230px auto 0;
+  }
+
+.choice_menu {
+    text-align: center;
+    margin: 50px auto 0;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.menu_icon{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+    border: none;
+    background-color: black;
+    color: grey;
+    margin-bottom: 80px;
+}
+
+.menu_icon:hover {
+    color: white;
+}
+
+.search_box {
+    padding-top: 180px;
+    font-size: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.search_area {
+    border: none;
+    width: 700px;
+    background-color: black;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.search_area:focus {
+    outline: none; /* 기본 테두리 제거 */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* 흰색 그림자 추가 */
+}
+
+.fa-magnifying-glass {
+    color: rgba(255, 255, 255, 0.7); /* 기본 색상 설정 */
+    margin-left: 10px; /* 아이콘과 입력 필드 간의 간격 추가 */
+    transition: color 0.3s ease; /* 색상 전환이 부드럽게 이루어지도록 설정 */
+}
+
+.fa-magnifying-glass:hover {
+    color: rgba(255, 255, 255, 0.9); /* 마우스 오버 시 진한 흰색으로 설정 */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.container_card {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+.shop {
+    width: 100%;
+} 
+
+.shop .card {
+    background-color: #3e3e3e;
+    color: white;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card-content h3 {
+    margin: 0;
+}
+
+.card-content p {
+    margin: 5px 0;
+}
+
+.new {
+    color: #fff;
+    text-align: center;
+    background-color: #f37321;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    padding-bottom: 5px;
+    width: 60px;
+}
+
+.card:hover {
+    animation: card_hover 0.8s ease-in-out infinite alternate;
+}
+
+.card:hover::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    border-radius: 15% 15% 0 0;
+    width: 100%;
+    height: 9px;
+    background-color: #f37321;
+}
+
+@keyframes card_hover {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.pagination .page-link {
+    background-color: black;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: yellow;
+}
+
+.pagination .page-link:hover {
+    color: orange;
+    background-color: black;
+}
+
+
+@media screen and (max-width: 900px) {
+    .container_card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container_card .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container_card .card {
+        width: 100%;
+    }
+
+    .card-content h3 {
+        font-size: 18px;
+    }
+
+    .card-content p {
+        display: none;
+    }
+
+    .choice_menu {width: 60%;
+        
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container_card .card {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .choice_menu {
+        display: none;
+    }
+
+    .menu_icon {
+        display: none;
+    }
+}
+
+
+.post{
+font-size: 15px;
+text-align: center;
+padding-top: 18px
+}
+
+.post2{
+    font-size: 13px;
+    text-align: center;
+}
+
+.best{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: -21px;
+    left: -22px;
+    padding-bottom: 6px;
+    width: 60px;
+}
+.best2{
+   
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        top: -22px;
+        left: -21px;
+        padding-bottom: 6px;
+        width: 60px;
+    
+}
+
+
+.card2{
+  margin-top: 28px;
+}
+
+#footer a {
+    text-decoration: none;
+}
