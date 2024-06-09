@@ -21,7 +21,7 @@
     .pc_only{display:none !important;}
     #container.eagles .right_conts{margin-top:65px;}
     #container.eagles .eagles_content .left_tab{position:relaitve;padding-top:5px;z-index:10;}
-    #container.eagles .eagles_content .left_tab .openBtn{display:block;width:100%;height:40px;color:#fff;line-height:40px;padding:0 15px;background:#000 url('/images/pages/eagles/bul_left_menu.png') no-repeat 100% 50%;background-size:auto 20px;border:1px solid #999;}
+    #container.eagles .eagles_content .left_tab .openBtn{display:block;width:100%;height:40px;color:#fff;line-height:40px;padding:0 15px;background:#000 url('../image/eagles/bul_left_menu.png') no-repeat 100% 50%;background-size:auto 20px;border:1px solid #999;}
     #container.eagles .eagles_content .left_tab ul{display:none;position:absolute;top:44px;left:0;width:100%;padding:15px 0;background:#000;border:1px solid #999;}
     #container.eagles .eagles_content .left_tab ul a{display:block;height:32px;line-height:32px;padding:0 15px;}
     #container.eagles .his_wrap ol:before{top:80px;left:4px;height:calc(100% - 80px);}
@@ -38,6 +38,18 @@
     #container.eagles .his_wrap ol .his_group b{font-size:18px;line-height:32px;}
     #container.eagles .his_wrap ol .his_group img{width:100%;margin:20px 0 0;}
     #container.eagles .his_wrap ol .his_group + .his_group{margin-top:25px;}
+
+    /* eagles */
+    #container.eagles .eagles_title{display:none;}
+
+    #container.eagles .left_tab{position:relative;width:100%;}
+
+    .eagles_content {position:relative;padding-left:0;margin-top:0;}
+
+    #container.eagles .align_wrap{-webkit-box-lines:multiple;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+    #container.eagles .align_wrap .col + .col{margin-left:0;}
+
+    .eagles_intro .symbol_list img { width: 80%; margin: 0 auto; }
 
     #container.eagles .his_wrap ol li.tit_area{padding-top:75px;}
     #container.eagles .his_wrap ol li.tit_area > strong{position:absolute;left:calc(50% - 100px);width:200px;font-size:70px;text-align:center;padding-left:0;}
@@ -84,7 +96,5 @@
     #container.eagles .eagles_intro .symbol_list ul { flex-direction: column; }
     #container.eagles .eagles_intro .symbol_list li + li { margin: 20px 0 0; }
 
-    #container.eagles .eagles_intro .btn_area  { width: 50vw; min-width:220px; margin: 30px auto 0; }
-    #container.eagles .eagles_intro .btn_area .btn_com { display: block;}
     #container.eagles .eagles_intro .btn_area .btn_com + .btn_com { margin: 10px 0 0 0; }
 }

@@ -11,3 +11,490 @@
   height: 150vh;
   background-color: aqua;
 }
+
+/* 메인영역 스타일 */
+#container {
+  overflow-x: hidden;
+  padding-bottom: 230px;
+}
+
+#container .title_area {
+  position: relative;
+  height: 1082px;
+  padding-top: 420px;
+  background-attachment: fixed !important;
+}
+
+#container .title_area::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 360px;
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);
+}
+
+#container .title_area h3 {
+  visibility: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: -999px;
+  left: -999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+#container.eagles .title_area {
+  background: url('../image/eagles/bg_header_eagles.jpg') no-repeat 50% 60%;
+}
+
+#container.eagles .eagles_title {
+  margin-bottom: 70px;
+  font-size: 60px;
+  line-height: 1.13;
+  color: #fff;
+  font-weight: 700;
+}
+
+#container .content_block {
+  position: relative;
+  width: 1240px;
+  padding-top: 160px;
+  margin: -230px auto 0;
+}
+
+.eagles_content {
+  position: relative;
+  padding-left: 320px;
+  margin-top: 120px;
+}
+
+/* 탭메뉴 스타일 */
+
+#container .content_block .tab_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 80px;
+  overflow: auto;
+}
+
+#container .content_block .tab_menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #707070;
+}
+
+#container .content_block .tab_menu::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#container .content_block .tab_menu ul {
+  float: left;
+}
+
+#container .content_block .tab_menu li {
+  float: left;
+}
+
+#container .content_block .tab_menu li + li {
+  margin-left: 34px;
+}
+
+#container .content_block .tab_menu a {
+  display: block;
+  position: relative;
+  height: 80px;
+  padding: 0 1px;
+  border: 2px solid transparent;
+  color: rgb(255,255,255, .5);
+  font-size: 18px;
+  line-height: 80px;
+}
+
+#container .content_block .tab_menu li a span, #container .content_block .tab_menu li.active a:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: #fff;
+}
+
+#container .content_block .tab_menu li.active a:before {
+  width: 100% !important;
+}
+
+#container .content_block .tab_menu li a:hover, #container .content_block .tab_menu li.active a {
+  color: #fff;
+}
+
+#container .content_block .tab_menu li a span {
+  width: 0;
+}
+
+#container .content_block .tab_menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  z-index: 11;
+  animation: tabMove .3s linear 1 normal;
+  animation-fill-mode: forwards;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#container .content_block .tab_menu.fixed.on {
+  background: #000;
+}
+
+#container .content_block .tab_menu.fixed ul {
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 컨텐츠 왼쪽 영역 */
+
+#container .left_tab {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+}
+
+#container .left_tab.fixed {
+  position: fixed;
+  top: 120px;
+  left: calc(50% - 620px);
+  animation: leftMove .3s linear 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftMove {
+  from {
+    left: calc(50% - 650px);
+  }
+  to {
+    left: calc(50% - 620px);
+  }
+}
+
+#container .left_tab li {
+  padding: 4px 0;
+}
+
+#container .left_tab a {
+  color: #808080;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#container .left_tab a:hover {
+  color: #fff;
+}
+
+#container .left_tab li.active a {
+  color: #fff;
+}
+
+#container .left_tab.club li.active a {
+  font-family: sans-serif;
+}
+
+/* 구단소개 */
+.eagles_intro .eagles_logo {
+  width: 505px;
+  height: 336px;
+  margin: 0 auto 80px;
+}
+
+.eagles_intro .eagles_logo img {
+  width: 100%;
+}
+
+.eagles_intro .strong {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.31;
+}
+
+.eagles_intro .strong .txt_hanwha {
+  font-family: sans-serif;
+}
+
+.eagles_intro p {
+  color: #808080;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.eagles_intro p .txt_hanwha {
+  font-family: sans-serif;
+}
+
+/* 그룹사소개 */
+.group_intro::after, .group_intro ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.group_intro dl {
+  float: left;
+}
+
+.group_intro dl.build {
+  width: 848px;
+}
+
+.group_intro dl.finance {
+  width: 212px;
+}
+
+.group_intro dl.service {
+  width: 180px;
+}
+
+.group_intro dt {
+  margin-right: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #808080;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.13;
+}
+
+.group_intro dl.service dt {
+  margin-right: 0;
+}
+
+.group_intro dd {
+  padding-top: 20px;
+}
+
+.group_intro li {
+  float: left;
+  width: 212px;
+  padding: 2px 0;
+}
+
+.group_intro li a {
+  display: block;
+  color: #808080;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.group_intro li a:hover {
+  color: #f37321;
+}
+
+/* 히스토리 영역 */
+
+#container.eagles .his_wrap img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#container .eagles_content .left_tab .openBtn {
+  display: none;
+}
+
+
+#container.eagles .his_wrap ol {
+  position: relative;
+}
+
+#container.eagles .his_wrap ol.active {
+  display: block;
+}
+
+#container.eagles .his_wrap ol ~ ol {
+  margin-top: 80px;
+}
+
+#container.eagles .his_wrap ol:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 160px;
+  left: 238px;
+  width: 2px;
+  height: calc(100% - 190px);
+  background: #fff;
+  opacity: 0.3;
+}
+
+#container.eagles .his_wrap ol li {
+  position: relative;
+  padding: 30px 0 30px 240px;
+}
+
+#container.eagles .his_wrap ol li > strong {
+  display: block;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 205px;
+  font-size: 56px;
+  text-align: right;
+  line-height: 56px;
+}
+
+#container.eagles .his_wrap ol .his_group {
+  position: relative;
+}
+
+#container.eagles .his_wrap ol .his_group + .his_group {
+  margin-top: 60px;
+}
+
+#container.eagles .his_wrap ol .his_group:before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: -7px;
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+#container.eagles .his_wrap ol .his_group > *:not(img) {
+  display: block;
+  padding-left: 54px;
+}
+
+#container.eagles .his_wrap ol .his_group b {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#container.eagles .his_wrap ol .his_group span {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#container.eagles .his_wrap ol .his_group i {
+  font-style: normal;
+}
+
+#container.eagles .his_wrap ol .his_group em {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#container.eagles .his_wrap ol .his_group img {
+  position: relative;
+  width: calc(100% - 55px);
+  margin: 55px 0 0 55px;
+}
+
+#container.eagles .his_wrap ol .his_group img.pc_only {
+  opacity: 1;
+}
+
+#container.eagles .his_wrap ol .his_group img.pc_only.active {
+  animation: imgOverlap .8s linear normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes imgOverlap {
+  0% {
+      top: 150px;
+      opacity: 0;
+  }
+
+  100% {
+      top: 0;
+      opacity: 100%;
+  }
+}
+
+#container.eagles .his_wrap ol li.point > strong {
+  font-size: 74px;
+  font-weight: 900;
+  color: #f37321;
+}
+
+#container.eagles .his_wrap ol li.point .point:before {
+  background: #f37321;
+}
+
+#container.eagles .his_wrap ol li.point .point em {
+  color: #f37321;
+}
+
+#container.eagles .his_wrap ol li.tit_area {
+  padding-top: 154px;
+  padding-left: 0;
+}
+
+#container.eagles .his_wrap ol li.tit_area > strong {
+  top: 0;
+  left: 105px;
+  width: auto;
+  font-size: 92px;
+  text-align: left;
+}
+
+#container.eagles .his_wrap ol li.tit_area > strong:after {
+  display: block;
+  content: "'";
+  position: absolute;
+  top: 0;
+  right: -5px;
+  font-style: italic;
+  color: #f37321;
+}
+
+#container.eagles .his_wrap ol li.tit_area .his_group > * {
+  padding-left: 0;
+}
+
+#container.eagles .his_wrap ol li.tit_area .his_group img {
+  margin-top: 0;
+}
+
+#container.eagles .his_wrap ol li.tit_area .his_group em, #container.eagles .his_wrap ol li.tit_area .his_group span {
+  position: absolute;
+  left: 105px;
+  letter-spacing: -0.03em;
+  z-index: 1;
+}
+
+#container.eagles .his_wrap ol li.tit_area .his_group em {
+  top: -24px;
+  font-size: 48px;
+}
+
+#container.eagles .his_wrap ol li.tit_area .his_group span {
+  top: 38px;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+#container.eagles .his_wrap ol li.tit_area .his_group:before {
+  display: none;
+}
