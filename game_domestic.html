@@ -2430,6 +2430,91 @@
         $("#headers").load("./game_header.html");
         $("#footers").load("./game_footer.html");
       });
+
+      
+	$(function(){
+		var scheduleShowDisplay =  function() {
+			return {
+				init: function() {
+					this.selectDisplay();
+					this.miniDisplay();
+				},
+				selectDisplay: function() {
+						
+					$(document)
+						.off('click', '.game_schedule .sel_view button')
+						.on('click', '.game_schedule .sel_view button' , function(e){
+							var btn = $(this),
+									showDisplay = btn.closest('.game_schedule').find('.schedule_conts'),
+									_winSz = $(window).width();
+
+							btn.addClass('active').siblings().removeClass('active');
+
+							if (btn.hasClass('btn_calendar')){
+								showDisplay.removeClass('list').addClass('calendar');
+							}else{
+								showDisplay.removeClass('calendar').addClass('list');
+							}
+						})
+				},
+				miniDisplay: function() {
+					var showDisplay = $('.game_schedule .schedule_conts'),
+							btn = $('.game_schedule .sel_view button'),
+							_winSz = $(window).width();
+
+					if (_winSz < 768) {
+						showDisplay.removeClass('calendar').addClass('list');
+					}
+
+					$(window).resize(function () {
+						if (_winSz < 768) {
+							showDisplay.removeClass('calendar').addClass('list');
+						} else{
+							if (btn.hasClass('btn_calendar active')){
+								showDisplay.removeClass('list').addClass('calendar');
+							}else{
+								showDisplay.removeClass('calendar').addClass('list');
+							}
+						}
+					});
+				}
+			}
+		}
+		scheduleShowDisplay().init();
+		
+		// added
+		$("#move_prev_month").click(function() {
+			go("202405");
+		});
+		
+		$("#move_next_month").click(function() {
+			go("202407");
+		});
+		
+		$("#move_year").change(function() {
+			year = $("#move_year").val();
+			month = $("#move_month").val();
+			
+			go(zeroPad(year,4)+zeroPad(month, 2));
+		});
+		
+		$("#move_month").change(function() {
+			year = $("#move_year").val();
+			month = $("#move_month").val();
+			
+			go(zeroPad(year,4)+zeroPad(month, 2));
+		});
+
+	});
+
+	function zeroPad(num, places) {
+		var zero = places - num.toString().length + 1;
+		return Array(+(zero > 0 && zero)).join("0") + num;
+	}
+
+	function go(str) {
+		location.href = "?ym=" + str;
+	}
     </script>
 
     <!-- main js -->
