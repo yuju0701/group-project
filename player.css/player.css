@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+@import "./global.css";
+
+#wrap {
+  position: relative;
+}
+
+/* 테스트 스타일 */
+.mainContainer {
+  height: 150vh;
+  background-color: aqua;
+}
+
+/* 메인영역 스타일 */
+#container {
+  overflow-x: hidden;
+  padding-bottom: 230px;
+}
+
+#container .title_area {
+  position: relative;
+  height: 1082px;
+  padding-top: 420px;
+  background-attachment: fixed !important;
+}
+
+#container .title_area::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 360px;
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);
+}
+
+#container .title_area h3 {
+  visibility: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: -999px;
+  left: -999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+#container.eagles .title_area {
+  background: url('https://www.hanwhaeagles.co.kr/images/pages/player/bg_header_player.jpg') no-repeat 50% 60%;
+}
+
+#container.eagles .eagles_title {
+  margin-bottom: 70px;
+  font-size: 60px;
+  line-height: 1.13;
+  color: #fff;
+  font-weight: 700;
+}
+
+#container .content_block {
+  position: relative;
+  width: 1240px;
+  padding-top: 160px;
+  margin: -230px auto 0;
+}
+
+.eagles_content {
+  position: relative;
+  padding-left: 320px;
+  margin-top: 120px;
+}
+
+/* 탭메뉴 스타일 */
+
+#container .content_block .tab_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 80px;
+  /* overflow: auto; */
+}
+
+#container .content_block .tab_menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #707070;
+}
+
+#container .content_block .tab_menu::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#container .content_block .tab_menu ul {
+  float: left;
+}
+
+#container .content_block .tab_menu li {
+  float: left;
+}
+
+#container .content_block .tab_menu li + li {
+  margin-left: 34px;
+}
+
+#container .content_block .tab_menu a {
+  display: block;
+  position: relative;
+  height: 80px;
+  padding: 0 1px;
+  border: 2px solid transparent;
+  color: rgb(255,255,255, .5);
+  font-size: 18px;
+  line-height: 80px;
+}
+
+#container .content_block .tab_menu li a span, #container .content_block .tab_menu li.active a:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background: #fff;
+}
+
+#container .content_block .tab_menu li.active a:before {
+  width: 100% !important;
+}
+
+#container .content_block .tab_menu li a:hover, #container .content_block .tab_menu li.active a {
+  color: #fff;
+}
+
+#container .content_block .tab_menu li a span {
+  width: 0;
+}
+
+#container .content_block .tab_menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  z-index: 11;
+  animation: tabMove .3s linear 1 normal;
+  animation-fill-mode: forwards;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#container .content_block .tab_menu.fixed.on {
+  background: #000;
+}
+
+#container .content_block .tab_menu.fixed ul {
+  float: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 컨텐츠 왼쪽 영역 화면 확인하고 주석풀어 */
+
+/* #container .left_tab {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+}
+
+#container .left_tab.fixed {
+  position: fixed;
+  top: 120px;
+  left: calc(50% - 620px);
+  animation: leftMove .3s linear 1 normal;
+  animation-fill-mode: forwards;
+}
+
+#container .left_tab li {
+  padding: 4px 0;
+}
+
+#container .left_tab a {
+  color: #808080;
+  font-family: 'MyriadPro-Regular', 'HanwhaGothicEL', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#container .left_tab a:hover {
+  color: #fff;
+}
+
+#container .left_tab li.active a {
+  color: #fff;
+}
+
+#container .left_tab.club li.active a {
+  font-family: 'HanwhaL', sans-serif;
+} */
+
+
+/* 선수단 이미지부분 주석처리했다가 확인하고 풀어
+.content_detail {
+  width: 1240px
+  height: 7617px
+} */
+
+
+#container .content_block .player_group {
+  padding-bottom: 200px;
+}
+
+#container .content_block .player_group h4 {
+  font-family: 'HanwhaGothicEL', sans-serif;
+  font-size: 24px;
+  line-height: 46px;
+  letter-spacing: -0.6px;
+  margin-bottom: 72px;
+}
+
+#container .content_block .player_list {
+  overflow: hidden;
+}
+
+#container .content_block .player_list ul {
+  font-size: 0;
+  text-align: left;
+  margin: -68px 0 0;
+}
+
+/* before 이전코드 */
+#container .content_block .player_list li {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 413px;
+  max-width: 100%;
+  text-align: center;
+  padding: 68px 0;
+}
+
+#container .content_block .player_list li:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #fff;
+  opacity: 0.12;
+  z-index: 2;
+}
+
+#container .content_block .player_list li .thumb {
+  overflow: hidden;
+  position: relative;
+}
+
+#container .content_block .player_list li .thumb:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #000, transparent);
+  z-index: 1;
+}
+
+#container .content_block .player_list li .thumb img {
+  display: block;
+  width: 392px;
+  margin: 0 auto;
+}
+
+#container .content_block .player_list li .btn_area {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'HanwhaGothicEL', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 246px;
+  opacity: 0;
+}
+
+/* 이거 위에코드밑에 있던 페이지css인데 주석처리했다가 나중에 주석풀어봐 혹시몰라 */
+#container.player .btn_area {
+  margin-top: 85px;
+}
+
+#container .content_block .player_list li .btn_area a {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* 이거 위에코드밑에 있던 페이지css인데 주석처리했다가 나중에 주석풀어봐 혹시몰라 */
+#container.player .btn_area a {
+  width: 200px;
+}
+
+
+#container .btn_area a span {
+  display: block;
+  content: '';
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #f37321;
+  z-index: -1;
+}
+
+#container .content_block .player_list li .info {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  padding-left: 140px;
+  margin-top: 22px;
+  word-break: break-all;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+#container .content_block .player_list li .info span {
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  font-family: 'MyriadPro-Semibold', sans-serif;
+  font-size: 90px;
+  color: #808080;
+  text-align: center;
+  letter-spacing: -3px;
+  line-height: 90px;
+}
+
+#container .content_block .player_list li .info strong {
+  font-family: 'HanwhaGothicEL', sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+#container .content_block .player_list li .info em {
+  font-family: 'MyriadPro-Light', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+/* 이거 위에코드밑에 있던 페이지css인데 주석처리했다가 나중에 주석풀어봐 혹시몰라 */
+#container .content_block .player_list li .info > * {
+  display: block;
+}

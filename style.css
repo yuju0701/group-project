@@ -281,3 +281,71 @@ body, h1, nav, ul, li, a {
 .custom-card .card-text {
     color: #ffffff; /* 카드 내용 텍스트 색상 화이트 */
 }
+
+#footer {
+    position: relative;
+    height: 230px;
+    font-family: 'HanwhaGothicT', 'Dotum', '돋움', sans-serif;
+    padding: 40px 40px 40px 90px;
+    background: #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 1;
+}
+
+#footer .f_info ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1;
+    padding-right: 12px;
+}
+
+#footer .f_info ul li + li {
+    padding: 0 12px;
+}
+
+#footer .f_menu {
+    position: absolute;
+    bottom: 40px;
+    left: 90px;
+}
+
+#footer .f_menu ul li {
+    padding-right: 35px;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+.orange2 {
+    color: #f37321 !important;
+}
+
+
+#footer .f_menu ul li a {
+    font-size: 14px;
+    color: #888;
+}
+
+#footer .copyright {
+    position: absolute;
+    bottom: 40px;
+    right: 59px;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 16px;
+    color: #888;
+}
+
+/* p {
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+    word-wrap: break-word;
+} */
+
+#footer .copyright span {
+    font-family: 'HanwhaR', sans-serif;
+    font-size: 14px;
+}
