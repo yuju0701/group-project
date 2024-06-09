@@ -1,0 +1,200 @@
+<header>
+  <nav>
+    <div class="lnb pc">
+      <div class="h-inner">
+        <div class="lnb-left">
+          <a href="../index.html" class="h-logo"
+            ><img src="../img/main/logo.png" alt="logo"
+          /></a>
+          <ul class="lnb-list">
+            <li>
+              <!-- li가 active인 경우 depth 창이 활성화 됨-->
+              <a href="./html/eagles.html" class="lnb-font-size"
+                ><span>EAGLES</span></a
+              >
+            </li>
+            <li>
+              <a href="./player_html/player.html"><span>PLAYERS</span></a>
+              <ul class="depth d02">
+                <li>
+                  <a href="./player_html/player_coaching.html">코칭스탭</a>
+                </li>
+                <li><a href="./player_html/player_pitcher.html">투수</a></li>
+                <li><a href="./player_html/player_catcher.html">포수</a></li>
+                <li>
+                  <a href="./player_html/player_infielder.html">내야수</a>
+                </li>
+                <li>
+                  <a href="./player_html/player_outfielder.html">외야수</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./game_domestic.html"><span>GAME</span></a>
+              <ul class="depth d03">
+                <li><a href="./game_domestic.html">1군 경기일정</a></li>
+                <li><a href="./game_oversea.html">퓨처스 경기일정</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./shop/shop.html"><span>SHOP</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="lnb-right">
+          <a href="#"><p>KO</p></a>
+          <span></span>
+          <a href="#"><p>EN</p></a>
+          <a href="#"><p>LOGIN</p></a>
+          <a href="#"><p>JOIN US</p></a>
+        </div>
+        <div class="ham_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    var _thsW = $(window).width(),
+      _juice = false;
+
+    $(document).ready(function () {
+      if (_thsW > 1024) {
+        // pc size
+        $(function () {
+          $("#header").prepend('<span class="sub_bg"></span>');
+
+          $("#header").on("mouseenter", function () {
+            $(this).addClass("on");
+          });
+          $("#header").on("mouseleave", function () {
+            if ($("#menu > ul > li > a").hasClass("active")) {
+              if ($(this).find("a").siblings("ul").length > 0) {
+                $(this).addClass("on");
+              } else {
+                $(this).removeClass("on");
+              }
+            } else {
+              $(this).removeClass("on");
+            }
+          });
+
+          $("#menu > ul > li > a").prepend("<span></span>");
+          $("#menu > ul > li > a").on(
+            "mouseover focus mouseout blur",
+            function (e) {
+              var _ths = $(this),
+                _hasChild = _ths.siblings("ul");
+
+              if (e.type == "mouseover" || e.type == "focus") {
+                $("#menu > ul > li > a")
+                  .removeClass("active")
+                  .find("span")
+                  .stop()
+                  .animate({ width: "0" }, 200);
+                $("#menu > ul > li > ul").stop().slideUp(200);
+
+                _ths.addClass("active");
+                _ths.find("span").stop().animate({ width: "100%" }, 200);
+                _hasChild.stop().slideDown(400);
+              } else if (e.type == "mouseout" || e.type == "blur") {
+                if (_hasChild.length == 0) {
+                  _ths.removeClass("active");
+                  _ths.find("span").stop().animate({ width: 0 }, 200);
+                }
+              }
+            }
+          );
+          $("#menu > ul > li > ul").mouseleave(function () {
+            $("#menu > ul > li > a")
+              .removeClass("active")
+              .find("span")
+              .stop()
+              .animate({ width: "0" }, 200);
+            $("#menu > ul > li > ul").stop().slideUp(200);
+          });
+
+          $("#menu > ul > li").on("mouseenter mouseleave", function (e) {
+            if (e.type == "mouseenter") {
+              if ($(this).find("a").siblings("ul").length > 0) {
+                $("#header .sub_bg").stop().animate({ opacity: "1" }, 50);
+              } else {
+                $("#header .sub_bg").stop().animate({ opacity: "0" }, 50);
+              }
+            } else if (e.type == "mouseleave") {
+              $("#header .sub_bg").stop().animate({ opacity: "0" }, 50);
+
+              if ($("#menu > ul > li > a").hasClass("active")) {
+                if ($(this).find("a").siblings("ul").length > 0) {
+                  $("#header .sub_bg").stop().animate({ opacity: "1" }, 50);
+                } else {
+                  $("#header .sub_bg").stop().animate({ opacity: "0" }, 50);
+                }
+              } else {
+                $("#header .sub_bg").stop().animate({ opacity: "0" }, 50);
+              }
+            }
+          });
+
+          $("#menu > ul > li > a").on("focus blur", function () {
+            if (e.type == "focus") {
+              if ($(this).find("a").siblings("ul").length > 0) {
+                $("#header .sub_bg").stop().animate({ opacity: "1" }, 50);
+              }
+            } else if (e.type == "blur") {
+              $("#header .sub_bg").stop().animate({ opacity: "0" }, 50);
+            }
+          });
+        });
+      } else {
+        // mobile size
+        // open menu btn
+        $(".menuToggle").click(function () {
+          $(this).blur();
+          $(".menu_effect").slideToggle(50);
+          $("header").toggleClass("active");
+        });
+
+        // menu mobile
+        $("#header nav > ul > li > a")
+          .not(".both")
+          .click(function (e) {
+            if (_thsW > 1024) {
+              return true;
+            }
+
+            e.preventDefault();
+            $("#header nav > ul > li").removeClass("on");
+            $("#header nav > ul > li > ul").hide();
+            $(this).siblings("ul").show();
+            $(this).closest("li").addClass("on");
+          });
+
+        $("#header nav > ul > li > ul > li > a").click(function (e) {
+          var thsTxt = $(this).text();
+
+          if (thsTxt == "HISTORY") {
+            console.log(thsTxt);
+            if (_thsW > 1024) {
+              return true;
+            }
+            e.preventDefault();
+          }
+        });
+
+        $("#header nav > ul > li > ul > li > a").click(function (e) {
+          $(this).closest("li").siblings("li").removeClass("on");
+          $(this).closest("li").siblings("li").find("ul").slideUp(200);
+          $(this).siblings("ul").slideToggle(200);
+          $(this).closest("li").toggleClass("on");
+        });
+      }
+    });
+    $(window).resize(function () {
+      _thsW = $(window).width();
+    });
+  </script>
+</header>
