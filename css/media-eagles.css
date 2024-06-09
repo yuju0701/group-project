@@ -39,6 +39,18 @@
     #container.eagles .his_wrap ol .his_group img{width:100%;margin:20px 0 0;}
     #container.eagles .his_wrap ol .his_group + .his_group{margin-top:25px;}
 
+    /* eagles */
+    #container.eagles .eagles_title{display:none;}
+
+    #container.eagles .left_tab{position:relative;width:100%;}
+
+    .eagles_content {position:relative;padding-left:0;margin-top:0;}
+
+    #container.eagles .align_wrap{-webkit-box-lines:multiple;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+    #container.eagles .align_wrap .col + .col{margin-left:0;}
+
+    .eagles_intro .symbol_list img { width: 80%; margin: 0 auto; }
+
     #container.eagles .his_wrap ol li.tit_area{padding-top:75px;}
     #container.eagles .his_wrap ol li.tit_area > strong{position:absolute;left:calc(50% - 100px);width:200px;font-size:70px;text-align:center;padding-left:0;}
     #container.eagles .his_wrap ol li.tit_area > strong:before{display:none;}

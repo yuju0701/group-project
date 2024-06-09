@@ -26,7 +26,9 @@
       <div id="headers"></div>
       <section id="container" class="eagles">
         <!-- 구현할 페이지를 여기에 작성 -->
-        <div class="title_area" style="height: 782px"></div>
+        <div class="title_area" style="height: 782px">
+          <h3>EAGLES</h3>
+        </div>
         <article id="eaglesCon" class="content_block eagles_intro">
           <div>
             <div class="tab_menu">
@@ -59,7 +61,21 @@
               <div class="eagles_content">
                 <!-- tab menu -->
                 <div>
+                  <script>
+                    $(function () {
+                      //메뉴 제어
+                      var menuCd = "MNCLCI";
+                      //console.log("My name is %s and.", menuCd);
+                      if (menuCd != "") {
+                        var menuCdLeft = menuCd + "_" + "LEFT";
+                        console.log("My name is %s and.", menuCdLeft);
+                        $("#" + menuCdLeft).addClass("active");
+                        //console.log("Active Function After");
+                      }
+                    });
+                  </script>
                   <div class="left_tab">
+                    <a href="javascript:void(0);" class="openBtn">구단소개</a>
                     <ul>
                       <li class="active" id="MNCLCI_LEFT">
                         <a href="#">구단소개</a>
@@ -333,7 +349,21 @@
               <div class="eagles_content">
                 <!-- left tab menu -->
                 <div>
+                  <script>
+                    $(function () {
+                      //메뉴 제어
+                      var menuCd = "MNHI01";
+                      //console.log("My name is %s and.", menuCd);
+                      if (menuCd != "") {
+                        var menuCdLeft = menuCd + "_" + "LEFT";
+                        console.log("My name is %s and.", menuCdLeft);
+                        $("#" + menuCdLeft).addClass("active");
+                        //console.log("Active Function After");
+                      }
+                    });
+                  </script>
                   <div class="left_tab">
+                    <a href="javascript:void(0);" class="openBtn">1981-1989</a>
                     <ul class="anchor">
                       <li class="active" id="MNHI01_LEFT">
                         <a href="#history_81-89">1981-1989</a>

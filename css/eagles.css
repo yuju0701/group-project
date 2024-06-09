@@ -310,6 +310,16 @@
 
 /* 히스토리 영역 */
 
+#container.eagles .his_wrap img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+#container .eagles_content .left_tab .openBtn {
+  display: none;
+}
+
+
 #container.eagles .his_wrap ol {
   position: relative;
 }
