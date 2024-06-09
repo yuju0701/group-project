@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@import "./game_global.css";
+
+#wrap {
+  position: relative;
+}
+
+/* 테스트 스타일 */
+.mainContainer {
+  height: 150vh;
+  background-color: aqua;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.title_area {
+  height: 1080px;
+  background: url(https://www.hanwhaeagles.co.kr/images/pages/game/bg_header_game.jpg) no-repeat 50% 50%;
+  background-attachment: fixed;
+}
+
+body {
+    font-size: 100%;
+    line-height: 1;
+    word-break: break-all;
+    word-break: keep-all;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    background: #191919;
+}
+
+html, body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+
+.game_schedule .schedule_conts .td_wrap .td_conts.home {
+  background-color: #353535;
+}
+
+.game_schedule .schedule_down {
+  position: relative;
+  height: 52px;
+  margin-top: 30px;
+}
+
+.game_schedule .schedule_down strong {
+  display: block;
+  font-family: 'HanwhaGothicEL', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.game_schedule .schedule_down p {
+  margin-top: 18px;
+  color: #808080;
+  font-family: 'HanwhaGothicT', sans-serif;
+  font-size: 14px;
+  line-height: 1.67;
+}
+
+.game_schedule .schedule_down span.bul_mark {
+  display: block;
+  margin-top: 2px;
+}
