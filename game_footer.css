@@ -140,6 +140,18 @@ footer > h1 .logo span {
   color: #666;
 }
 
+@media screen and (max-width: 767px) {
+  footer .copyright {
+      bottom: auto;
+      top: 250px;
+      right: auto;
+      width: auto;
+      font-size: 12px;
+      text-align: left;
+      padding-bottom: 25px;
+  }
+}
+
 @media only screen and (max-width: 1315px) {
   nav {
       width: auto;
@@ -154,7 +166,7 @@ footer > h1 .logo span {
   }
 
   .ham_btn {
-      display: block;
+      display: none;
   }
 
   .f_info {
@@ -162,7 +174,22 @@ footer > h1 .logo span {
   }
 }
 
+@media only screen and (max-width: 1180px) {
+  .copy_R {
+    display: none;
+  }
+
+  .copy_R span{
+    display: none;
+  }
+
+  .copy_R strong{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1100px) {
+
   footer {
       flex-direction: column;
   }
@@ -171,6 +198,15 @@ footer > h1 .logo span {
       padding-top: 20px;
       flex-direction: column;
   }
+
+  .lnb-right {
+    display: none;
+  }
+
+  .sns_icon {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -179,7 +215,7 @@ footer > h1 .logo span {
       flex-direction: column;
       padding: 30px;
       text-align: center;
-      height: auto;
+      height: 200px;
   }
 
   footer>h1 {
@@ -188,7 +224,7 @@ footer > h1 .logo span {
 
   .f_info {
       width: 100%;
-      flex-direction: column;
+      display: block;
   }
 
   .mall {
@@ -206,6 +242,17 @@ footer > h1 .logo span {
   .f_menu {
       width: 100%;
       justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 770px) {
+  .lnb-list{
+    display: none;
+  }
+
+  .ham_btn {
+    display: block;
   }
 
 }

@@ -820,3 +820,68 @@ input, select, textarea, button {
         width: 116px;
     }
 }
+
+.game_schedule .category span.home::after {
+    border: 1px solid #444;
+    background-color: #333;
+}
+
+.game_schedule .schedule_down span.bul_mark {
+    display: block;
+    margin-top: 2px;
+}
+
+#container .btn_area {
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 0;
+    text-align: center;
+}
+
+.game_schedule .schedule_down .btn_area {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#container .game_schedule .schedule_down .btn_area a.btn_com {
+    padding: 0 50px !important;
+}
+
+#container .btn_area a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 62px;
+    font-size: 16px;
+    line-height: 62px;
+    padding: 0 52px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.bul_mark::before {
+    content: '※';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #808080;
+    font-family: 'HanwhaGothicEL', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#container .btn_area a span {
+    display: block;
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f37321;
+    z-index: -1;
+}
