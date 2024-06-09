@@ -1,0 +1,887 @@
+article {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+*::selection {
+    color: #fff;
+    background: rgba(243, 115, 33, 0.8);
+}
+
+#container {
+    background: #000;
+}
+
+#container {
+    overflow-x: hidden;
+    font-family: 'HanwhaGothicB', sans-serif;
+    padding-bottom: 230px;
+  }
+
+#container .content_block {
+    position: relative;
+    width: 1240px;
+    padding-top: 160px;
+    margin: -230px auto 0;
+}
+
+#container .title_area {
+    position: relative;
+    height: 1082px;
+    padding-top: 420px;
+    background-attachment: fixed !important;
+}
+
+#container .title_area::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 360px;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.53) 35%, #000000);
+}
+
+#container .content_block .tab_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1240px;
+    height: 80px;
+}
+
+#container .content_block .tab_menu::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #707070;
+}
+
+#container .content_block .tab_menu::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#container .content_block .tab_menu ul {
+    float: left;
+}
+
+#container .title_area h3 {
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: -999px;
+    left: -999px;
+    width: 0;
+    height: 0;
+    font-family: 'MyriadPro-Semibold', sans-serif;
+    font-size: 0;
+    line-height: 1;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.content_block ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+
+#container .content_block .tab_menu li {
+    float: left;
+}
+
+
+
+#container .content_block .tab_menu a {
+    display: block;
+    position: relative;
+    height: 80px;
+    padding: 0 1px;
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255, .5);
+    font-family: 'HanwhaGothicEL', sans-serif;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+.game_schedule .tab_conts {
+    position: relative;
+    padding-top: 66px;
+}
+
+.game_schedule .sel_view {
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
+
+.game_schedule .sel_view button {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 40px;
+}
+
+button {
+    border: 0 none;
+    border-radius: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input, select, textarea, button {
+    vertical-align: middle;
+}
+
+a, a:hover, a:focus, button {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blind {
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+.game_schedule .sel_view button.btn_calendar.active::after {
+    background-image: url(https://www.hanwhaeagles.co.kr/images/pages/game/btn_game_calendar_active.png);
+}
+
+.game_schedule .sel_view button.btn_calendar::after {
+    background-image: url(https://www.hanwhaeagles.co.kr/images/pages/game/btn_game_calendar.png);
+}
+
+.game_schedule .sel_view button::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 14px);
+    top: calc(50% - 14px);
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game_schedule .sel_view button {
+    position: relative;
+    float: left;
+    width: 48px;
+    height: 40px;
+}
+
+.game_schedule .select_date .select, .game_schedule .select_date .select:hover, .game_schedule .select_date .select.on {
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.game_schedule .select_date .select {
+    display: inline-block;
+    width: auto;
+    height: 44px;
+}
+
+.select {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.select::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 15px;
+    height: 14px;
+    margin-top: -7px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(https://www.hanwhaeagles.co.kr/images/common/icon_arrow_down@2x.png);
+}
+
+.game_schedule .select_date .select::after {
+    right: 0;
+    top: 50%;
+    width: 13px;
+    height: 7px;
+    background-image: url(https://www.hanwhaeagles.co.kr/images/pages/game/icon_arrow_game_down.png);
+}
+
+.game_schedule .select_date .select select {
+    width: auto;
+    height: 44px;
+    padding: 0 22px 0 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 38px;
+    line-height: 44px;
+}
+
+.game_schedule .select_date .select::after {
+    right: 0;
+    top: 50%;
+    width: 13px;
+    height: 7px;
+    background-image: url(https://www.hanwhaeagles.co.kr/images/pages/game/icon_arrow_game_down.png);
+}
+
+.game_schedule .select_date .btn_cal.next {
+    right: 0;
+}
+
+.game_schedule .select_date .btn_cal {
+    position: absolute;
+    top: 0;
+    width: 63px;
+    height: 44px;
+}
+
+.game_schedule .select_date .btn_cal.next::after {
+    background-image: url(https://www.hanwhaeagles.co.kr/images/pages/game/btn_next.png);
+}
+
+.game_schedule .select_date .btn_cal::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 24px);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game_schedule .category {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.game_schedule .category span.exp {
+    margin-left: 0;
+}
+
+.game_schedule .category span {
+    position: relative;
+    float: left;
+    margin-left: 28px;
+    padding-left: 32px;
+    color: #808080;
+    font-family: 'HanwhaGothicEL', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.game_schedule .category span.exp::after {
+    border: 1px solid #444;
+}
+
+.game_schedule .category span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 13px);
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+}
+
+.game_schedule .category span.now::after {
+    border: 1px solid #f37321;
+}
+
+.game_schedule .schedule_conts.calendar .calendar_show, .game_schedule .schedule_conts.list .list_show {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.game_schedule .schedule_conts .th_wrap {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #777;
+}
+
+.game_schedule .schedule_conts .th_wrap span {
+    display: block;
+    width: 100%;
+    color: #808080;
+    font-family: 'HanwhaGothicT', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.game_schedule .schedule_conts.calendar .list_show, .game_schedule .schedule_conts.list .calendar_show {
+    display: none;
+}
+
+.game_schedule .schedule_conts .th_wrap {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #777;
+}
+
+.game_schedule .schedule_conts.list .td_wrap .td_conts .col:nth-of-type(1), .game_schedule .schedule_conts .th_wrap.list_show span:nth-of-type(1) {
+    width: 165px;
+}
+
+.game_schedule .schedule_conts.list .td_wrap .td_conts .col:nth-of-type(2), .game_schedule .schedule_conts .th_wrap.list_show span:nth-of-type(2) {
+    width: 110px;
+}
+
+.game_schedule .schedule_conts.list .td_wrap .td_conts .col:nth-of-type(3), .game_schedule .schedule_conts .th_wrap.list_show span:nth-of-type(3) {
+    width: 106px;
+}
+
+.game_schedule .schedule_conts.list .td_wrap .td_conts .col:nth-of-type(4), .game_schedule .schedule_conts .th_wrap.list_show span:nth-of-type(4) {
+    width: 362px;
+}
+
+.game_schedule .schedule_conts.list .td_wrap .td_conts .col:nth-of-type(5), .game_schedule .schedule_conts .th_wrap.list_show span:nth-of-type(5) {
+    width: 105px;
+}
+
+.game_schedule .schedule_conts .th_wrap span {
+    display: block;
+    width: 100%;
+    color: #808080;
+    font-family: 'HanwhaGothicT', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts {
+    position: relative;
+    z-index: 5;
+    width: 177px;
+    height: 180px;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #444;
+    border-bottom: 1px solid #444;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .inner {
+    display: fixed;
+    width: 100%;
+    height: 180px !important;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts:nth-of-type(1)::after, .game_schedule .schedule_conts.calendar .td_wrap .td_conts:nth-of-type(7n+1)::after {
+    border-left: 1px solid transparent;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .col.date, .game_schedule .schedule_conts.calendar .td_wrap .td_conts .col.cate, .game_schedule .schedule_conts.calendar .td_wrap .td_conts .col.place, .game_schedule .schedule_conts.calendar .td_wrap .td_conts .col.gm_rs {
+    display: none;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .col.time {
+    position: absolute;
+    left: 0;
+    top: 73px;
+    width: 100%;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, .5);
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 14px;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .lst.date {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: rgba(255, 255, 255, .5);
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 14px;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .club_logo {
+    position: absolute;
+    left: 50%;
+    top: 18px;
+    width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    overflow: hidden;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .club_logo img {
+    width: 100%;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .lst.gm_rs {
+    position: absolute;
+    left: 0;
+    top: 95px;
+    width: 100%;
+    padding: 0 10px;
+    line-height: 28px;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .lst.gm_rs .rs {
+    padding: 0 5px;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .lst.gm_rs .win {
+    font-family: 'HanwhaGothicT', sans-serif;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts .lst.gm_rs .det {
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    vertical-align: middle;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts:nth-of-type(1)::after, .game_schedule .schedule_conts.calendar .td_wrap .td_conts:nth-of-type(7n+1)::after {
+    border-left: 1px solid transparent;
+}
+
+.game_schedule .schedule_conts .td_wrap .td_conts.section3 {
+    background-color: #00933c;
+}
+
+.game_schedule .schedule_conts .td_wrap .td_conts.section4 {
+    background-color: #ee352e;
+}
+
+.game_schedule .schedule_conts .td_wrap .td_conts.section1 {
+    background-color: #0039a6;
+}
+
+.game_schedule .schedule_conts .td_wrap .td_conts.section2 {
+    background-color: #fccc0a;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts.now {
+    z-index: 10;
+}
+
+.game_schedule .schedule_conts.calendar .td_wrap .td_conts.now::after {
+    right: -1px;
+    top: -1px;
+    border: 4px solid #f37321;
+}
+
+.game_schedule .schedule_conts .sections {
+    margin: 80px 0;
+}
+
+.game_schedule .schedule_conts .sections ul {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.game_schedule .schedule_conts .sections li {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 61px;
+    height: 61px;
+    text-align: center;
+    border: 1px rgba(68, 68, 68, 0.4) solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.game_schedule .schedule_conts .sections li.section1 {
+    background: #0039a6;
+}
+
+.game_schedule .schedule_conts .sections li.section2 {
+    background: #fccc0a;
+}
+
+.game_schedule .schedule_conts .sections li.section3 {
+    background: #00933c;
+}
+
+.game_schedule .schedule_conts .sections li.section4 {
+    background: #ee352e;
+}
+
+.game_schedule .schedule_conts .sections li span {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'HanwhaGothicL';
+}
+
+.btn_box {
+    text-align: center;
+    margin: 70px 0;
+}
+
+.btn_reservation {
+    display: inline-block;
+}
+
+.btn_reservation img {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.game_schedule .list_bul {
+    margin-top: 40px;
+}
+
+.game_schedule .list_bul li {
+    margin-top: 2px;
+}
+
+.bul_mark.white, .bul_mark.white::before {
+    color: #fff;
+    font-family: 'HanwhaGothicEL', sans-serif;
+}
+
+.bul_mark {
+    position: relative;
+    padding-left: 14px;
+    color: #808080;
+    font-family: 'HanwhaGothicT', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.bul_mark.white, .bul_mark.white::before {
+    color: #fff;
+    font-family: 'HanwhaGothicEL', sans-serif;
+}
+
+.bul_mark::before {
+    content: '※';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #808080;
+    font-family: 'HanwhaGothicEL', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.game_schedule .select_date .btn_cal.prev::after {
+    background-image: url(https://www.hanwhaeagles.co.kr/images/pages/game/btn_prev.png);
+}
+
+.game_schedule .select_date .btn_cal::after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 24px);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game_schedule .select_date .btn_cal.prev {
+    left: 0;
+}
+
+.game_schedule .tab_conts {
+    position: relative;
+    padding-top: 66px;
+}
+
+.game_schedule .select_date .select select {
+    width: auto;
+    height: 44px;
+    padding: 0 22px 0 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 38px;
+    line-height: 44px;
+}
+
+select {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-rtl-ordering: logical;
+    background-color: field;
+    cursor: default;
+    margin: 0em;
+    white-space: pre;
+    border-width: 1px;
+    border-style: solid;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+}
+
+.game_schedule .select_date .select select option {
+    font-size: 18px;
+    background-color: #191919;
+}
+
+.select select {
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 15px;
+    background-color: #262626;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    appearance: none;
+    color: #fff;
+    font-family: 'HanwhaGothicT', sans-serif;
+    font-size: 14px;
+}
+
+input, select, textarea, button {
+    vertical-align: middle;
+}
+
+.game_schedule .select_date {
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    padding: 0 64px 0 68px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#container .content_block .tab_menu li a:hover, #container .content_block .tab_menu li.active a {
+    color: #fff;
+}
+
+#container .content_block .tab_menu li.active a:before {
+    width: 100% !important;
+}
+
+#container .content_block .tab_menu li a span, #container .content_block .tab_menu li.active a:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    background: #fff;
+}
+
+#container .content_block .tab_menu li a span, #container .content_block .tab_menu li.active a:before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    background: #fff;
+}
+
+#container .content_block .tab_menu::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -16px;
+    height: 1px;
+    background-color: #707070;
+}
+
+#container .content_block .tab_menu a {
+    display: block;
+    position: relative;
+    height: 80px;
+    padding: 0 1px;
+    margin-right: 40px;
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255, .5);
+    font-family: 'HanwhaGothicEL', sans-serif;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+#container .content_block .tab_menu a:hover {
+    #container .content_block .tab_menu a span {
+        width: 116px;
+    }
+}
+
+.game_schedule .category span.home::after {
+    border: 1px solid #444;
+    background-color: #333;
+}
+
+.game_schedule .schedule_down span.bul_mark {
+    display: block;
+    margin-top: 2px;
+}
+
+#container .btn_area {
+    font-family: 'MyriadPro-Regular', sans-serif;
+    font-size: 0;
+    text-align: center;
+}
+
+.game_schedule .schedule_down .btn_area {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#container .game_schedule .schedule_down .btn_area a.btn_com {
+    padding: 0 50px !important;
+}
+
+#container .btn_area a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    height: 62px;
+    font-size: 16px;
+    line-height: 62px;
+    padding: 0 52px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.bul_mark::before {
+    content: '※';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #808080;
+    font-family: 'HanwhaGothicEL', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#container .btn_area a span {
+    display: block;
+    content: '';
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f37321;
+    z-index: -1;
+}
